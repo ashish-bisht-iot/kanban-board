@@ -121,7 +121,6 @@ export default function App() {
           <div className="logo">
             <span className="logo-icon">⬛</span>
             <span className="logo-text">KANBAN</span>
-            <span className="logo-sub">// sprint 05</span>
           </div>
           <div className="board-stats">
             {COLUMNS.map(col => (
