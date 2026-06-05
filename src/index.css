@@ -46,4 +46,6 @@ body {
   --text: #111118;
   --text-muted: #555568;
   --text-dim: #aaaabc;
+  --accent: #6c5ce7;
+  --accent-glow: rgba(108, 92, 231, 0.1);
 }
