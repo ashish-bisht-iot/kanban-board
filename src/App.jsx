@@ -30,7 +30,9 @@ export default function App() {
   const [tasks, setTasks] = useState(loadState)
   const [search, setSearch] = useState('')
   const [activeTask, setActiveTask] = useState(null)
-  const [dark, setDark] = useState(true)
+  const [dark, setDark] = useState(() => {
+  return localStorage.getItem('kanban-theme') !== 'light'
+})
 
   useEffect(() => {
     localStorage.setItem('kanban-tasks', JSON.stringify(tasks))
