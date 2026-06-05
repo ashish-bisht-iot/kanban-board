@@ -56,6 +56,12 @@ export default function App() {
     setTasks(prev => prev.map(t => t.id === id ? { ...t, text } : t))
   }, [])
 
+  const clearAll = useCallback(() => {
+    if (window.confirm('Delete all tasks? This cannot be undone.')) {
+      setTasks([])
+    }
+  }, [])
+
   const moveTask = useCallback((id, direction) => {
     const colOrder = ['todo', 'inprogress', 'done']
     setTasks(prev => prev.map(t => {
@@ -132,6 +138,7 @@ export default function App() {
           </div>
         </div>
         <div className="header-right">
+          <button className="clear-btn" onClick={clearAll}>⟳ Reset</button>
           <div className="search-wrap">
             <span className="search-icon">⌕</span>
             <input
