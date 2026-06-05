@@ -1,6 +1,6 @@
-# Kanban Task Board ⬛
+# Kanban Task Board
 
-A Trello-style task management board built with **React + Vite** featuring full drag-and-drop, priority tagging, inline editing, and persistent state. Built as part of the Prodesk IT internship — Sprint 05.
+A Trello-style task management board built with **React + Vite** featuring full drag-and-drop, priority tagging, inline editing, and persistent state.
 
 ---
 
@@ -25,12 +25,12 @@ A Trello-style task management board built with **React + Vite** featuring full 
 
 ## ✨ Features
 
-- **Phase 1 — Base MVP** — 3-column Kanban layout (To Do, In Progress, Done) with Add, Delete, and Move controls on every card
-- **Phase 2 — Inline Editing** — Double-click any task to edit it in place; save with Enter or click away
-- **Phase 2 — Priority System** — Assign High / Medium / Low priority during creation; cards render with red / yellow / green left border accordingly
-- **Phase 2 — localStorage Persistence** — Board state survives hard refreshes; tasks are saved automatically on every change
-- **Phase 3 — Drag and Drop** — Drag cards between columns or reorder within a column using `@dnd-kit`
-- **Phase 3 — Real-time Search** — Global filter input narrows visible tasks across all three columns instantly
+- **Base MVP** — 3-column Kanban layout (To Do, In Progress, Done) with Add, Delete, and Move controls on every card
+- **Inline Editing** — Double-click any task to edit it in place; save with Enter or click away
+- **Priority System** — Assign High / Medium / Low priority during creation; cards render with red / yellow / green left border accordingly
+- **localStorage Persistence** — Board state survives hard refreshes; tasks are saved automatically on every change
+- **Drag and Drop** — Drag cards between columns or reorder within a column using `@dnd-kit`
+- **Real-time Search** — Global filter input narrows visible tasks across all three columns instantly
 - **Dark Theme** — Minimal dark UI with color-coded columns and priority indicators
 
 ---
@@ -45,55 +45,6 @@ A Trello-style task management board built with **React + Vite** featuring full 
 | localStorage | Client-side state persistence |
 | Vercel | Deployment & hosting |
 | Vanilla CSS | Styling with CSS variables |
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/ashish-bisht-iot/kanban-board.git
-cd kanban-board
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Run the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-> ⚠️ No API key required — this sprint is entirely client-side state logic.
-
----
-
-## 📦 Build & Deploy
-
-### Build for production
-
-```bash
-npm run build
-```
-
-### Deploy to Vercel
-
-Push to GitHub and import the repository on [vercel.com](https://vercel.com). Vercel auto-detects Vite — no configuration needed.
-
----
-
-## 🌐 Live Demo
-
-| Project | URL |
-|---|---|
-| Kanban Task Board | [kanban-board.vercel.app](https://kanban-board.vercel.app) |
 
 ---
 

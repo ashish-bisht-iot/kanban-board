@@ -1,4 +1,4 @@
-# Prompts.md — Sprint 05
+# Prompts.md — kanban-board
 
 This file documents the AI prompts I used during development as a pair-programmer.
 
