@@ -36,3 +36,14 @@ body {
 }
 
 #root { min-height: 100vh; }
+
+.light {
+  --bg: #f4f4f8;
+  --surface: #ffffff;
+  --surface2: #ebebf0;
+  --border: #d0d0dc;
+  --border-bright: #b0b0c0;
+  --text: #111118;
+  --text-muted: #555568;
+  --text-dim: #aaaabc;
+}

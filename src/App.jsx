@@ -30,6 +30,7 @@ export default function App() {
   const [tasks, setTasks] = useState(loadState)
   const [search, setSearch] = useState('')
   const [activeTask, setActiveTask] = useState(null)
+  const [dark, setDark] = useState(true)
 
   useEffect(() => {
     localStorage.setItem('kanban-tasks', JSON.stringify(tasks))
@@ -121,7 +122,7 @@ export default function App() {
   const totalByColumn = (colId) => tasks.filter(t => t.column === colId).length
 
   return (
-    <div className="app">
+    <div className={`app ${dark ? 'dark' : 'light'}`}>
       <header className="header">
         <div className="header-left">
           <div className="logo">
@@ -138,8 +139,11 @@ export default function App() {
           </div>
         </div>
         <div className="header-right">
-          <button className="clear-btn" onClick={clearAll}>⟳ Reset</button>
-          <div className="search-wrap">
+          <button className="theme-btn" onClick={() => setDark(prev => !prev)}>
+  {dark ? '☀ Light' : '☾ Dark'}
+</button>
+<button className="clear-btn" onClick={clearAll}>⟳ Reset</button>
+<div className="search-wrap">
             <span className="search-icon">⌕</span>
             <input
               className="search-input"

@@ -107,6 +107,22 @@
   color: var(--high);
 }
 
+.theme-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.theme-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 /* ── BOARD ── */
 .board {
   display: grid;
