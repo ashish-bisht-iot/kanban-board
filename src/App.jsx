@@ -38,6 +38,10 @@ export default function App() {
     localStorage.setItem('kanban-tasks', JSON.stringify(tasks))
   }, [tasks])
 
+  useEffect(() => {
+    localStorage.setItem('kanban-theme', dark ? 'dark' : 'light')
+  }, [dark])
+
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 5 } }))
 
   const addTask = useCallback((text, priority) => {
