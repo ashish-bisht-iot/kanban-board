@@ -1,6 +1,6 @@
 # Prompts.md — Sprint 05
 
-This file documents the AI prompts I used during development as a pair-programmer. I used Claude to understand concepts, debug issues, and get unstuck.
+This file documents the AI prompts I used during development as a pair-programmer.
 
 ---
 
