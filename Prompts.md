@@ -135,15 +135,3 @@ I needed a search input that filters visible tasks without deleting them from st
 The key insight is to never filter the actual state — only filter what gets passed to the columns. I keep a separate `search` state for the input value. Before rendering, I compute a `filtered` array: if `search` is empty return all tasks, otherwise return tasks where the text includes the search string (case-insensitive with `.toLowerCase()`). I pass `filtered` to the columns instead of `tasks`. The real data is always untouched — the filter is purely a display concern.
 
 ---
-
-## 12. Deploying a Vite React app to Vercel via GitHub
-
-First time deploying a React project. Needed to confirm there was no extra config needed compared to a vanilla HTML project.
-
-**My prompt:**
-> "do i need any special vercel configuration to deploy a vite react app or does it auto detect everything"
-
-**What I learned:**
-Vercel fully auto-detects Vite projects. It sets `vite build` as the build command and `dist` as the output directory without any manual config. I just pushed to GitHub, imported the repo on vercel.com, and clicked Deploy. No `vercel.json` needed. The only thing I had to be careful about was making sure `node_modules` was in `.gitignore` before the first commit, which it was.
-
----
